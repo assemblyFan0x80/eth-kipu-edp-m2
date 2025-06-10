@@ -187,7 +187,7 @@ contract Auction {
         if (block.timestamp >= auctionEndTime) {
             return 0;
         }
-        // Para mostrar el tiempo restante en segundos
+        // Para mostrar el tiempo restante en minutos
         return (auctionEndTime - block.timestamp) / 60;
     }
 }
